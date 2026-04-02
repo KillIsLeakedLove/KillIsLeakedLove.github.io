@@ -1,0 +1,36 @@
+/* ===== CSS Variables ===== */
+:root {
+  /* Light theme - warm beige gradient */
+  --bg-primary: #f8f5f0;
+  --bg-secondary: #f0ebe3;
+  --bg-gradient-start: #faf8f5;
+  --bg-gradient-end: #f2ede5;
+  --text-primary: #3d3d3d;
+  --text-secondary: #6b6b6b;
+  --text-muted: #999;
+  --border-color: #e0d8cc;
+  --accent-color: #8b7355;
+  --accent-hover: #6b5a45;
+  --card-bg: rgba(255, 255, 255, 0.8);
+  --overlay-bg: rgba(0, 0, 0, 0.4);
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+[data-theme="dark"] {
+  /* Dark theme - deep blue gradient */
+  --bg-primary: #1a1a2e;
+  --bg-secondary: #16213e;
+  --bg-gradient-start: #0f0f23;
+  --bg-gradient-end: #1a1a3e;
+  --text-primary: #e8e8e8;
+  --text-secondary: #b8b8b8;
+  --text-muted: #888;
+  --border-color: #2a2a4a;
+  --accent-color: #c9b896;
+  --accent-hover: #d4c4a0;
+  --card-bg: rgba(30, 30, 50, 0.8);
+  --overlay-bg: rgba(0, 0, 0, 0.6);
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
