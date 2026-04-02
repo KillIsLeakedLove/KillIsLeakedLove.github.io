@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art Blog</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Maple+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-brand">
+      <svg class="palette-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"/>
+        <path d="M12 2a10 10 0 0 1 10 10c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm0 2a8 8 0 0 0-8 8c0 4.418 3.582 8 8 8s8-3.582 8-8a8 8 0 0 0-8-8z"/>
+        <circle cx="12" cy="12" r="3"/>
+        <circle cx="17" cy="7" r="1.5"/>
+      </svg>
+      <span>Art Blog</span>
+    </div>
+    <div class="nav-links">
+      <a href="#home" data-i18n="navHome">首页</a>
+      <a href="#blog" data-i18n="navBlog">博客</a>
+      <a href="#about" data-i18n="navAbout">关于</a>
+    </div>
+    <div class="nav-controls">
+      <!-- Theme Toggle -->
+      <button class="btn-icon" id="themeBtn" title="Toggle theme">
+        <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="5"/>
+          <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+        </svg>
+      </button>
+      <!-- Language Toggle -->
+      <button class="btn-icon" id="langBtn" title="Toggle language">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Theme Menu -->
+  <div class="dropdown-menu" id="themeMenu">
+    <button data-theme="light" data-i18n="themeLight">明亮</button>
+    <button data-theme="dark" data-i18n="themeDark">黑暗</button>
+    <button data-theme="system" data-i18n="themeSystem">系统</button>
+  </div>
+
+  <!-- Language Menu -->
+  <div class="dropdown-menu" id="langMenu">
+    <button data-lang="zh">中文</button>
+    <button data-lang="en">English</button>
+  </div>
+
+  <!-- Main Content -->
+  <main id="main">
+    <!-- Home Page -->
+    <section id="home" class="page active">
+      <div class="gallery-bg">
+        <div class="gallery-grid">
+          <div class="gallery-item" data-id="1">
+            <img src="images/starry-night.jpg" alt="The Starry Night">
+          </div>
+          <div class="gallery-item" data-id="2">
+            <img src="images/mona-lisa.jpg" alt="Mona Lisa">
+          </div>
+          <div class="gallery-item" data-id="3">
+            <img src="images/great-wave.jpg" alt="The Great Wave">
+          </div>
+          <div class="gallery-item" data-id="4">
+            <img src="images/pearl-earring.jpg" alt="Girl with a Pearl Earring">
+          </div>
+          <div class="gallery-item" data-id="5">
+            <img src="images/last-supper.jpg" alt="The Last Supper">
+          </div>
+          <div class="gallery-item" data-id="6">
+            <img src="images/creation-of-adam.jpg" alt="The Creation of Adam">
+          </div>
+          <div class="gallery-item" data-id="7">
+            <img src="images/birth-of-venus.jpg" alt="The Birth of Venus">
+          </div>
+          <div class="gallery-item" data-id="8">
+            <img src="images/the-kiss.jpg" alt="The Kiss">
+          </div>
+        </div>
+        <div class="gallery-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <h1 data-i18n="heroTitle">艺术 · 生活 · 思考</h1>
+        <p data-i18n="heroSubtitle">在代码与画笔之间寻找平衡</p>
+      </div>
+    </section>
+
+    <!-- Blog Page -->
+    <section id="blog" class="page">
+      <div class="container">
+        <h1 class="page-title" data-i18n="blogTitle">博客文章</h1>
+        <div class="blog-list">
+          <article class="blog-card" data-article="1">
+            <div class="blog-image">
+              <img src="images/starry-night.jpg" alt="Van Gogh">
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span>2024-03-15</span>
+                <span data-i18n="readTime8">8 分钟</span>
+              </div>
+              <h2 data-i18n="article1Title">梵高：燃烧的灵魂</h2>
+              <p data-i18n="article1Excerpt">文森特·梵高，这位荷兰后印象派画家，用他短暂而炽热的生命，为世界留下了无数珍贵的艺术遗产...</p>
+              <div class="blog-tags">
+                <span>后印象派</span>
+                <span>梵高</span>
+                <span>艺术史</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="blog-card" data-article="2">
+            <div class="blog-image">
+              <img src="images/great-wave.jpg" alt="Ukiyo-e">
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span>2024-03-10</span>
+                <span data-i18n="readTime6">6 分钟</span>
+              </div>
+              <h2 data-i18n="article2Title">浮世绘的艺术魅力</h2>
+              <p data-i18n="article2Excerpt">浮世绘是日本江户时代兴起的一种独特的艺术形式，以其精美的线条和鲜明的色彩闻名于世...</p>
+              <div class="blog-tags">
+                <span>浮世绘</span>
+                <span>日本艺术</span>
+                <span>葛饰北斋</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="blog-card" data-article="3">
+            <div class="blog-image">
+              <img src="images/pearl-earring.jpg" alt="Vermeer">
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span>2024-03-05</span>
+                <span data-i18n="readTime7">7 分钟</span>
+              </div>
+              <h2 data-i18n="article3Title">光影大师维米尔</h2>
+              <p data-i18n="article3Excerpt">约翰内斯·维米尔是荷兰黄金时代最伟大的画家之一，他以其对光线的精妙处理而闻名...</p>
+              <div class="blog-tags">
+                <span>维米尔</span>
+                <span>荷兰黄金时代</span>
+                <span>光影</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="blog-card" data-article="4">
+            <div class="blog-image">
+              <img src="images/mona-lisa.jpg" alt="Da Vinci">
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span>2024-02-28</span>
+                <span data-i18n="readTime10">10 分钟</span>
+              </div>
+              <h2 data-i18n="article4Title">达·芬奇的永恒之谜</h2>
+              <p data-i18n="article4Excerpt">列奥纳多·达·芬奇是文艺复兴时期最杰出的代表之一。《蒙娜丽莎》那神秘的微笑...</p>
+              <div class="blog-tags">
+                <span>文艺复兴</span>
+                <span>达·芬奇</span>
+                <span>蒙娜丽莎</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Article Detail Page -->
+    <section id="article" class="page">
+      <div class="container">
+        <button class="back-btn" id="backBtn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+          </svg>
+          <span data-i18n="backToBlog">返回博客</span>
+        </button>
+        <article class="article-detail" id="articleContent">
+          <!-- Content loaded by JS -->
+        </article>
+      </div>
+    </section>
+
+    <!-- About Page -->
+    <section id="about" class="page">
+      <div class="container">
+        <div class="about-header">
+          <div class="avatar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"/>
+              <path d="M12 14c-3.5 0-6.5 2-8 5h16c-1.5-3-4.5-5-8-5z"/>
+            </svg>
+          </div>
+          <h1 data-i18n="aboutTitle">关于我</h1>
+          <p data-i18n="aboutDesc">一个热爱艺术与技术的创作者</p>
+        </div>
+
+        <div class="about-sections">
+          <div class="about-card">
+            <h2 data-i18n="introTitle">简介</h2>
+            <p data-i18n="introText">你好，我是 Art Blog 的创作者。我是一名热爱艺术与技术的开发者。在这个博客中，我希望分享对世界名画的欣赏与思考，探索艺术背后的历史与文化。</p>
+            <p data-i18n="passionText">我相信艺术能够跨越时空，触动每一个人的心灵。无论是梵高的星空，还是维米尔的光影，都蕴含着人类最深刻的情感表达。</p>
+          </div>
+
+          <div class="about-card">
+            <h2 data-i18n="skillsTitle">技能与兴趣</h2>
+            <div class="skill-tags">
+              <span data-i18n="skill1">前端开发</span>
+              <span data-i18n="skill2">UI/UX 设计</span>
+              <span data-i18n="skill3">艺术史研究</span>
+              <span data-i18n="skill4">摄影</span>
+            </div>
+          </div>
+
+          <div class="about-card">
+            <h2 data-i18n="contactTitle">联系方式</h2>
+            <div class="social-links">
+              <a href="mailto:hello@artblog.com" aria-label="Email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                </svg>
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p data-i18n="footer">用热爱构建</p>
+      <p>&copy; 2024 Art Blog. MIT License.</p>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
