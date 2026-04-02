@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img'" aria-label="cloud icon">
-  <title>Cloud</title>
-  <g fill="none" fill-rule="evenodd">
-    <rect width="64" height="64" fill="transparent"/>
-    <path d="M45.9 27.7c-0.9-6.1-6.2-10.7-12.6-10.7-5 0-9.3 2.8-11.3 6.9C18.6 23.9 14 25 10.7 28.7 7 32.7 7 38 9.8 41.6c2.6 3.1 6.8 3.9 10.3 2.7h21.7c5.7 0 9-4.8 9-9.5 0-4.4-3.5-8.5-8.9-9.1z" fill="#fff"/>
-  </g>
-</svg>
