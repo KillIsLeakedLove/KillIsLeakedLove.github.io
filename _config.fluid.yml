@@ -7,6 +7,20 @@ navbar:
   blog_title: "Leon"
   ground_glass:
     enable: true
+  # 导航栏链接
+  menu:
+    - key: home
+      link: /
+    - name: Gallery
+      link: /gallery/
+    - key: archives
+      link: /archives/
+    - key: categories
+      link: /categories/
+    - key: tags
+      link: /tags/
+    - key: about
+      link: /about/
 
 # 自定义 CSS/JS
 custom_css: /css/custom.css
@@ -27,6 +41,12 @@ index:
   slogan:
     enable: true
     text: "这里是 Leon 的个人博客"
+  post_meta:
+    date: true
+    category: true
+    tag: true
+  auto_excerpt:
+    enable: true
 
 # 文章页
 post:

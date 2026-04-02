@@ -1,19 +1,13 @@
 ---
-title: 
+title: Art Gallery · 艺术画廊
 date: 2026-04-02 00:00:00
-layout: index
+layout: page
+banner_img: https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?w=1920
+banner_img_height: 60
 ---
 
-<!-- 个人简介卡片 -->
-<div class="profile-card">
-  <img class="profile-avatar" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=200" alt="Avatar">
-  <h2 class="profile-name">Leon</h2>
-  <p class="profile-bio">热爱编程与艺术 | 探索技术与美学的交汇点<br>Passionate about coding & art | Exploring the intersection of technology and aesthetics</p>
-</div>
-
 <!-- 艺术画廊 -->
-<div class="gallery-section">
-  <h2 class="gallery-title">Art Gallery · 艺术画廊</h2>
+<div class="gallery-section" style="margin-top: 0;">
   <div class="art-grid">
     <div class="art-card">
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg/800px-Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg" alt="The Creation of Adam">
@@ -58,4 +52,11 @@ layout: index
       </div>
     </div>
   </div>
+</div>
+
+<!-- 个人简介 -->
+<div class="profile-card" style="margin-top: 3rem;">
+  <img class="profile-avatar" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=200" alt="Avatar">
+  <h2 class="profile-name">Leon</h2>
+  <p class="profile-bio">热爱编程与艺术 | 探索技术与美学的交汇点<br>Passionate about coding & art | Exploring the intersection of technology and aesthetics</p>
 </div>
